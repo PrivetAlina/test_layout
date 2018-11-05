@@ -1,0 +1,12 @@
+@font-face {
+  src: url("fonts/Montserrat.ttf");
+  font-family: "Montserrat";
+}
+.block_2 {
+  height: 200px;
+  width: 1170px;
+  height: margin: 0 auto;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
