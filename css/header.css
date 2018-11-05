@@ -41,7 +41,6 @@ header.wrap > input {
 }
 .wrap label.cntr:after {
   border: 2px solid transparent;
-  border: none;
   content: " ";
   display: block;
   position: absolute;
@@ -257,6 +256,10 @@ figure.logo {
   font-weight: bold;
   line-height: 1.643;
   margin: 50px 0 20px 0;
+}
+.header-content-wrap > button:hover {
+  background-color: #ffffff;
+  color: #998675;
 }
 @media (max-width: 768px) {
   .header-content-wrap > h2 {

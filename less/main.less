@@ -1,15 +1,79 @@
-@import "variable";
+@import "variable.less";
 @font-face{
     src: url("fonts/Montserrat.ttf");
     font-family:"Montserrat";
 } 
+*{  
+    margin: 0;
+    padding: 0;}
 
-.block_2 {
-	height: @block-height;
-	width: @width-block-2;
-    height: 
+.block_2{
+    background: @block-2-color;
+    
+
+}
+.block_2_wrap{
+    max-width:@width-block-2; 
     margin: 0 auto;
-    background-color: red;
     display: flex;
-    justify-content: center;
+    padding: 40px 0;
+}
+.subblock-2 {
+    padding: 40px 15px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    max-width: 46%;
+	
+}
+.subblock-icon{
+    display: block;
+      margin: 0 auto;
+}
+span.subblock-2-title{
+   display: block; 
+  font-size: 22px;
+  font-family:@font-add;
+  color: @subblock-2-title-color;
+    padding: 30px 0 20px 0;
+
+}
+p.subblock-2-txt{
+  font-size: 14px; 
+  font-family:@font-main;
+  color: @subblock-2-txt-color;
+  line-height: 1.714;  
+    position: relative;
+
+}
+p.subblock-2-txt:after {
+    width:@width-subblock-2-after-line;
+    border-bottom: @subblock-2-after-line-color;
+    padding-left:10px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -(@width-subblock-2-after-line/2)
+
+}
+.subblock-2:hover{
+    span.subblock-2-title{ 
+      color: @subblock-2-hover-color;
+    }
+    p.subblock-2-txt:after{
+    border-bottom-color: @subblock-2-hover-color;
+    }
+}
+@media (max-width: 992px){
+    .block_2_wrap{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 768px){
+    .subblock-2 {
+    max-width: 100%;
+    }
 }

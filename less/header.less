@@ -1,4 +1,4 @@
-@import "variable";
+@import "variable.less";
 @font-face{
     src: url("fonts/Montserrat.ttf");
     font-family:"Montserrat";
@@ -32,8 +32,8 @@ header.wrap > input {
 .wrap label.cntr {
     cursor: pointer;
     display: inline-block;
-    height: @slider-label-height;
-    width: @slider-label-width;
+    height: @height-slider-label;
+    width: @width-slider-label;
     margin: 6px;
     position: relative;
     border-radius: 50%;
@@ -41,7 +41,6 @@ header.wrap > input {
 }
 .wrap label.cntr:after {
     border: 2px solid transparent; 
-    border: none;
     content: " ";
     display: block;
     position: absolute;
@@ -262,6 +261,11 @@ figure.logo{
         font-weight: bold;
         line-height: 1.643;
         margin: 50px 0 20px 0; 
+        
+        &:hover{
+            background-color: @font-logo-color;
+            color:@button-header-color;
+            }    
         }
     }
 @media (max-width: 768px) {
@@ -279,3 +283,4 @@ figure.logo{
     }
 }
     
+
