@@ -28,6 +28,7 @@ header.wrap > input {
   margin-left: -50px;
   left: 50%;
   top: 90%;
+  margin-top: 20px;
 }
 .wrap label.cntr {
   cursor: pointer;
@@ -78,7 +79,7 @@ header.wrap > input {
 .nav_wrap a {
   text-decoration: none;
 }
-figure.logo {
+.logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -112,6 +113,10 @@ figure.logo {
 }
 .icon-nav-item {
   margin-left: 26px;
+  fill: #ffffff;
+}
+.icon-nav-item:hover {
+  fill: #c7b299;
 }
 @media (max-width: 992px) {
   .all-nav {
@@ -241,8 +246,9 @@ figure.logo {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   line-height: 1.5;
+  margin-bottom: 50px;
 }
-.header-content-wrap > button {
+button.main-button {
   border-radius: 3px;
   background-color: #998675;
   box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
@@ -255,11 +261,14 @@ figure.logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   line-height: 1.643;
-  margin: 50px 0 20px 0;
 }
-.header-content-wrap > button:hover {
+button.main-button:hover {
   background-color: #ffffff;
   color: #998675;
+}
+button.main-button:active {
+  background-color: #4a4844;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .header-content-wrap > h2 {
@@ -281,10 +290,10 @@ figure.logo {
   margin: 0;
   padding: 0;
 }
-.block_2 {
+.block-2 {
   background: #ffffff;
 }
-.block_2_wrap {
+.block-2-wrap {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -300,6 +309,7 @@ figure.logo {
 .subblock-icon {
   display: block;
   margin: 0 auto;
+  fill: #555555;
 }
 span.subblock-2-title {
   display: block;
@@ -332,6 +342,9 @@ p.subblock-2-txt:after {
 .subblock-2:hover p.subblock-2-txt:after {
   border-bottom-color: #c7b299;
 }
+.subblock-2:hover .subblock-icon {
+  fill: #c7b299;
+}
 @media (max-width: 992px) {
   .block_2_wrap {
     justify-content: space-between;
@@ -342,4 +355,216 @@ p.subblock-2-txt:after {
   .subblock-2 {
     max-width: 100%;
   }
+}
+.block-3 {
+  background: #fbfaf8;
+  overflow: hidden;
+}
+.block-3-wrap {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  padding: 55px 0 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h2.block-3-title {
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  color: #555555;
+  margin: 25px 15px;
+  text-align: center;
+}
+p.block-3-txt {
+  display: block;
+  max-width: 50%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #8c8c8c;
+  line-height: 1.75;
+  margin: 0 15px;
+  text-align: center;
+}
+.block-3-img {
+  width: 100%;
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 40px;
+  position: relative;
+}
+.left_img {
+  display: block;
+  width: 50%;
+}
+.center_img {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  z-index: 0;
+}
+.right_img {
+  width: 50%;
+  display: block;
+}
+.block-4 {
+  background-image: -webkit-linear-gradient(bottom, #211b19 0%, #4e3427 100%);
+  background-image: -o-linear-gradient(bottom, #211b19 0%, #4e3427 100%);
+  background-image: linear-gradient(to top, #211b19 0%, #4e3427 100%);
+}
+.block-4-wrap {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 3.6% 3%;
+}
+.block-4-wrap h2 {
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+}
+.block-4-wrap h2 > span {
+  color: #c7b299;
+}
+.block-4-wrap p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #615855;
+  margin-top: 10px;
+}
+.block-5 {
+  background-color: #ffffff;
+}
+.block-5-wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block-5-wrap h2 {
+  width: 100%;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  color: #555555;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 80px 0 0 0;
+}
+.block-5-wrap p {
+  display: block;
+  width: 66%;
+  margin: 30px 17%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #8c8c8c;
+  line-height: 1.75;
+  text-align: center;
+}
+.block-5-btn-group {
+  display: block;
+  width: 66%;
+  margin: 0 17% 40px 17%;
+  text-align: center;
+}
+.block-5-btn-group button {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #8c8c8c;
+  line-height: 1.5;
+  text-align: center;
+  border: solid 1px #ebebeb;
+  border-radius: 3px;
+  background-color: rgba(17, 17, 17, 0);
+  padding: 10px 20px;
+}
+.block-5-btn-group button:hover {
+  color: #ffffff;
+  background-color: #998675;
+}
+.projects-block-wrap {
+  width: 100%;
+}
+.project-item {
+  float: right;
+  width: 31%;
+  background: #fff454;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 1.75%;
+}
+.project-item:nth-child(3n) {
+  margin-left: 0;
+}
+.project-item:nth-child(-n+3) {
+  margin-top: 0;
+}
+.project-item:nth-child(3n+1) {
+  margin-right: 0;
+}
+.project_image {
+  overflow: hidden;
+  background-color: orange;
+  height: 66%;
+  width: 100%;
+}
+@media (max-width: 890px) {
+  .projects-block-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .project-item {
+    width: 48%;
+  }
+  .project-item:nth-child(n) {
+    margin: 2% 0;
+  }
+}
+.project-name {
+  height: 35%;
+  width: 100%;
+  background: green;
+  position: relative;
+}
+.project-name::before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: 20px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid green;
+}
+.project-name h3 {
+  margin: 30px 8px 8px 30px;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #c7b299;
+}
+.project-name p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #d1d1d1;
+  margin: 8px 8px 8px 30px;
+}
+.hidden-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  display: none;
+}
+.project-item:hover .hidden-icon {
+  display: flex;
+}
+.hidden-icon:hover svg {
+  fill: blue;
 }

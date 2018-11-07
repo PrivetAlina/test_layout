@@ -28,6 +28,7 @@ header.wrap > input {
     margin-left: -50px;
     left: 50%;
     top:90%;
+    margin-top: 20px;
 }
 .wrap label.cntr {
     cursor: pointer;
@@ -72,7 +73,7 @@ header.wrap > input {
         text-decoration: none;
     }
 }
-figure.logo{
+.logo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -110,6 +111,11 @@ figure.logo{
     margin-left: 23px;
     &-item{
         margin-left: 26px;
+        fill:@font-logo-color;
+        
+        &:hover{
+            fill:@font-logo-color-hover;
+        }
     }
 }          
     
@@ -246,28 +252,33 @@ figure.logo{
         font-family: @font-main;
         color: @font-logo-color;
         line-height: 1.5;
+        margin-bottom: 50px;
         }
-    &>button{
+     }
+button.main-button{
         border-radius: 3px;
-        background-color:@button-header-color;
+        background-color:@color-main-button;
         box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
         width: 170px;
         height: 53px;
         text-transform: uppercase;
         border: none;
-        color: @font-logo-color;
+        color: @color-main-button-txt;
         font-size: 14px;
         font-family: @font-add;
         font-weight: bold;
         line-height: 1.643;
-        margin: 50px 0 20px 0; 
-        
+    
         &:hover{
-            background-color: @font-logo-color;
-            color:@button-header-color;
+            background-color: @color-main-button-hover;
+            color:@color-main-button-txt-hover;
             }    
-        }
+        &:active{
+            background-color: @color-main-button-active;
+            color:@color-main-button-txt-active;
     }
+        }
+   
 @media (max-width: 768px) {
     .header-content-wrap{
         & > h2{

@@ -28,6 +28,7 @@ header.wrap > input {
   margin-left: -50px;
   left: 50%;
   top: 90%;
+  margin-top: 20px;
 }
 .wrap label.cntr {
   cursor: pointer;
@@ -78,7 +79,7 @@ header.wrap > input {
 .nav_wrap a {
   text-decoration: none;
 }
-figure.logo {
+.logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -112,6 +113,10 @@ figure.logo {
 }
 .icon-nav-item {
   margin-left: 26px;
+  fill: #ffffff;
+}
+.icon-nav-item:hover {
+  fill: #c7b299;
 }
 @media (max-width: 992px) {
   .all-nav {
@@ -241,8 +246,9 @@ figure.logo {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   line-height: 1.5;
+  margin-bottom: 50px;
 }
-.header-content-wrap > button {
+button.main-button {
   border-radius: 3px;
   background-color: #998675;
   box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
@@ -255,11 +261,14 @@ figure.logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   line-height: 1.643;
-  margin: 50px 0 20px 0;
 }
-.header-content-wrap > button:hover {
+button.main-button:hover {
   background-color: #ffffff;
   color: #998675;
+}
+button.main-button:active {
+  background-color: #4a4844;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .header-content-wrap > h2 {

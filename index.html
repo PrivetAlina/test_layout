@@ -7,36 +7,31 @@
    </head>
    <body>
       <header class="wrap">
-       
-        <input type="radio" name="slides" id="point1" checked>
-        <input type="radio" name="slides" id="point2">
-        <input type="radio" name="slides" id="point3">
-        <input type="radio" name="slides" id="point4">
-
-
-        <div class="slider"></div>
-
-        <div class="control">
-         <label class="cntr" for="point1"></label>
-         <label class="cntr" for="point2"></label>
-         <label class="cntr" for="point3"></label>
-         <label class="cntr" for="point4"></label>
-        </div>
-        
+         <input type="radio" name="slides" id="point1" checked>
+         <input type="radio" name="slides" id="point2">
+         <input type="radio" name="slides" id="point3">
+         <input type="radio" name="slides" id="point4">
+         <div class="slider"></div>
+         <div class="control">
+            <label class="cntr" for="point1"></label>
+            <label class="cntr" for="point2"></label>
+            <label class="cntr" for="point3"></label>
+            <label class="cntr" for="point4"></label>
+         </div>
          <div class="nav_wrap">
             <a target="_blank" href="https://giphy.com/gifs/originals-reaction-3o6ozzc24Ikxi1WXo4/fullscreen">
-               <figure class="logo">
+               <div class="logo">
                   <img class="logo-img" src="img/svg/logo.svg" alt="Waxom logo"/>
-                  <figcaption class="logo-caption">Waxom</figcaption>
-               </figure>
+                  <div class="logo-caption">Waxom</div>
+               </div>
             </a>
             <nav class="all-nav">
                <div class="hidden-nav">
                   <input type="checkbox" id="hmt" class="hidden-nav-ticker">
                   <label class="btn-nav" for="hmt">
-                      <span class="first"></span>
-                      <span class="second"></span>
-                      <span class="third"></span>
+                  <span class="first"></span>
+                  <span class="second"></span>
+                  <span class="third"></span>
                   </label>
                   <div class="hidden-nav-list">
                      <a href="#">Home</a>
@@ -62,80 +57,170 @@
                <div class="icon-nav">
                   <a href="#">
                      <svg class="icon-nav-item" width="18" height="24">
-                        <defs>
-                           <filter id="a">
-                              <feFlood flood-color="#FFF" flood-opacity="1" result="floodOut"/>
-                              <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/>
-                              <feBlend in="compOut" in2="SourceGraphic"/>
-                           </filter>
-                        </defs>
-                        <path fill-rule="evenodd" d="M15 3h-1.5c0-1.7-2-3-4.5-3S4.5 1.3 4.5 3H3a3 3 0 0 0-3 3v15a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM9 1.5c1.7 0 3 .5 3 1.5H6c0-1 1.3-1.5 3-1.5zM16.5 21c0 .8-.7 1.5-1.5 1.5H3c-.8 0-1.5-.7-1.5-1.5v-1.5h15V21zm0-3h-15V6c0-.8.7-1.5 1.5-1.5h1.5V9H6V4.5h6V9h1.5V4.5H15c.8 0 1.5.7 1.5 1.5v12z" filter="url(#a)"/>
+                        <path d="M15 3h-1.5c0-1.7-2-3-4.5-3S4.5 1.3 4.5 3H3a3 3 0 0 0-3 3v15a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM9 1.5c1.7 0 3 .5 3 1.5H6c0-1 1.3-1.5 3-1.5zM16.5 21c0 .8-.7 1.5-1.5 1.5H3c-.8 0-1.5-.7-1.5-1.5v-1.5h15V21zm0-3h-15V6c0-.8.7-1.5 1.5-1.5h1.5V9H6V4.5h6V9h1.5V4.5H15c.8 0 1.5.7 1.5 1.5v12z"/>
                      </svg>
                   </a>
                   <a href="#">
                      <svg class="icon-nav-item" width="24" height="24">
-                        <defs>
-                           <filter id="b">
-                              <feFlood flood-color="#FFF" flood-opacity="1" result="floodOut"/>
-                              <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/>
-                              <feBlend in="compOut" in2="SourceGraphic"/>
-                           </filter>
-                        </defs>
-                        <path fill-rule="evenodd" d="M23.76 22.68l-6.2-6.1a9.8 9.8 0 0 0 2.63-6.65c0-5.49-4.52-9.93-10.1-9.93C4.52 0 0 4.44 0 9.93c0 5.49 4.52 9.93 10.1 9.93 2.4 0 4.61-.83 6.35-2.22l6.21 6.12c.3.3.8.3 1.1 0 .3-.3.3-.78 0-1.08zM10.1 18.33a8.47 8.47 0 0 1-8.54-8.4c0-4.64 3.83-8.4 8.54-8.4a8.47 8.47 0 0 1 8.54 8.4c0 4.64-3.82 8.4-8.54 8.4z" filter="url(#a)"/>
+                        <path fill-rule="evenodd" d="M23.76 22.68l-6.2-6.1a9.8 9.8 0 0 0 2.63-6.65c0-5.49-4.52-9.93-10.1-9.93C4.52 0 0 4.44 0 9.93c0 5.49 4.52 9.93 10.1 9.93 2.4 0 4.61-.83 6.35-2.22l6.21 6.12c.3.3.8.3 1.1 0 .3-.3.3-.78 0-1.08zM10.1 18.33a8.47 8.47 0 0 1-8.54-8.4c0-4.64 3.83-8.4 8.54-8.4a8.47 8.47 0 0 1 8.54 8.4c0 4.64-3.82 8.4-8.54 8.4z"/>
                      </svg>
                   </a>
                </div>
             </nav>
          </div>
          <div class="header-content-wrap">
-                 <h2>Unique and Modern Design</h2>
-                 <h1>Portfolio PSD Template</h1>
-                 <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                 <button>Get started</button>
+            <h2>Unique and Modern Design</h2>
+            <h1>Portfolio PSD Template</h1>
+            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+            <button class="main-button">Get started</button>
          </div>
       </header>
       <main>
-          <section class="block_2">
-             <div  class="block_2_wrap">
-              <div class="subblock-2">
-            
-                <svg class="subblock-icon" width="49" height="49">
-                
-                <defs><feFlood flood-color="#555" flood-opacity="1" result="floodOut"/><feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/><feBlend in="compOut" in2="SourceGraphic"/></defs>
-                
-                <path fill-rule="evenodd" d="M47.67 19.72L33.4 33.99.53 48.45 15.01 15.6 29.28 1.33a1.59 1.59 0 1 1 2.25 2.25L17.68 17.42 9.11 36.9l3 3 19.46-8.58 13.85-13.84a1.59 1.59 0 1 1 2.25 2.25zm-17.93 8.75a1.6 1.6 0 0 1-2.24 0 1.6 1.6 0 0 1 0-2.25l13.33-13.33a1.58 1.58 0 0 1 2.25 0c.62.62.62 1.62 0 2.24L29.75 28.47zm-3.47-3.48a1.6 1.6 0 0 1-2.25-2.25L37.34 9.4a1.59 1.59 0 1 1 2.25 2.25L26.26 24.98zm-3.49-3.49a1.58 1.58 0 0 1-2.25 0 1.6 1.6 0 0 1 0-2.25L33.87 5.92a1.59 1.59 0 1 1 2.25 2.25L22.78 21.5z" />
-                </svg>
-            
-                 <span class="subblock-2-title">Web & App Design</span>
-                  <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
-              </div>
-              
-                   <div class="subblock-2">
-
-                   <svg class="subblock-icon" width="49" height="49"><defs><feFlood flood-color="#C7B299" flood-opacity="1" result="floodOut"/><feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/><feBlend in="compOut" in2="SourceGraphic"/></defs><path fill-rule="evenodd" d="M.4 19.7l4-2.2L21.9 27l17.4-9.5 4 2.2-21.4 11.6L.4 19.7zm0-8L22 0l21.4 11.6-21.4 11.5L.4 11.7zM22 35l17.4-9.4 4 2.1-21.4 11.6L.4 27.7l4-2.1L21.9 35z"/></svg>
-                   
-                    <span class="subblock-2-title">Development</span>
-                    <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
-              </div>
-              
-              
-              
-              <div class="subblock-2">
-                   <svg class="subblock-icon" width="49" height="49"><defs><feFlood flood-color="#555" flood-opacity="1" result="floodOut"/><feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/><feBlend in="compOut" in2="SourceGraphic"/></defs><path fill-rule="evenodd" d="M44 21.9c0-1.7-1.2-3.4-2.7-4a6 6 0 0 1-3.2-2.6 6 6 0 0 1 .3-4.3c.7-1.4.3-3.4-.9-4.6a4.3 4.3 0 0 0-4.5-.8 6 6 0 0 1-4.3.3A6 6 0 0 1 26 2.7 4.3 4.3 0 0 0 22.1 0a4.3 4.3 0 0 0-3.8 2.6 6 6 0 0 1-2.8 3.2 6 6 0 0 1-4.2-.3 4.3 4.3 0 0 0-4.6.8A4.3 4.3 0 0 0 6 11a6 6 0 0 1 .3 4.3A6 6 0 0 1 3 18a4.3 4.3 0 0 0-2.6 3.9c0 1.6 1.1 3.3 2.6 3.8a6 6 0 0 1 3.2 2.8 6 6 0 0 1-.3 4.2c-.7 1.4-.3 3.4.8 4.6a4.3 4.3 0 0 0 4.6.8 6 6 0 0 1 4.2-.3 6 6 0 0 1 2.8 3.2 4.3 4.3 0 0 0 3.8 2.6c1.7 0 3.4-1.1 3.9-2.6a6 6 0 0 1 2.7-3.2 6 6 0 0 1 4.3.3c1.4.7 3.4.3 4.5-.8a4.3 4.3 0 0 0 1-4.6 6 6 0 0 1-.4-4.2 6 6 0 0 1 3.2-2.8A4.3 4.3 0 0 0 44 22zm-21.9 8a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/></svg>                   
-                    <span class="subblock-2-title">Customization</span>
-                    <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
-              </div>
+         <section class="block-2">
+            <div  class="block-2-wrap">
                <div class="subblock-2">
-                   <svg class="subblock-icon" width="49" height="49"><defs><feFlood flood-color="#555" flood-opacity="1" result="floodOut"/><feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/><feBlend in="compOut" in2="SourceGraphic"/></defs><path fill-rule="evenodd" d="M51.4 14.3L42 33.8a4.3 4.3 0 0 1-3.5 2.2H3c-1.4 0-2-1-1.4-2.2l9.5-19.5a4.3 4.3 0 0 1 3.5-2.2H50c1.4 0 2 1 1.4 2.2zM9 13.3L.7 30V8c0-1.4 1.1-2.5 2.5-2.5H14V4.1A3.7 3.7 0 0 1 17.7.3H24c2 0 3.7 1.7 3.7 3.8v1.4h10.8c1.3 0 2.4 1.1 2.4 2.5v1.6H14.7A6.8 6.8 0 0 0 9 13.2zm7.5-7.8h8.7V4.1c0-.7-.5-1.3-1.2-1.3h-6.3c-.3 0-.6.1-.9.4-.2.2-.3.5-.3.9v1.4z"/></svg>
-                    <span class="subblock-2-title">Marketing</span>
-                    <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
-              </div>
-              </div>
-              
-          </section>
-          
-          
+                  <svg class="subblock-icon" width="49" height="49">
+                     <path d="M47.67 19.72L33.4 33.99.53 48.45 15.01 15.6 29.28 1.33a1.59 1.59 0 1 1 2.25 2.25L17.68 17.42 9.11 36.9l3 3 19.46-8.58 13.85-13.84a1.59 1.59 0 1 1 2.25 2.25zm-17.93 8.75a1.6 1.6 0 0 1-2.24 0 1.6 1.6 0 0 1 0-2.25l13.33-13.33a1.58 1.58 0 0 1 2.25 0c.62.62.62 1.62 0 2.24L29.75 28.47zm-3.47-3.48a1.6 1.6 0 0 1-2.25-2.25L37.34 9.4a1.59 1.59 0 1 1 2.25 2.25L26.26 24.98zm-3.49-3.49a1.58 1.58 0 0 1-2.25 0 1.6 1.6 0 0 1 0-2.25L33.87 5.92a1.59 1.59 0 1 1 2.25 2.25L22.78 21.5z" />
+                  </svg>
+                  <span class="subblock-2-title">Web & App Design</span>
+                  <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
+               </div>
+               <div class="subblock-2">
+                  <svg class="subblock-icon" width="49" height="49">
+                     <path d="M.4 19.7l4-2.2L21.9 27l17.4-9.5 4 2.2-21.4 11.6L.4 19.7zm0-8L22 0l21.4 11.6-21.4 11.5L.4 11.7zM22 35l17.4-9.4 4 2.1-21.4 11.6L.4 27.7l4-2.1L21.9 35z"/>
+                  </svg>
+                  <span class="subblock-2-title">Development</span>
+                  <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
+               </div>
+               <div class="subblock-2">
+                  <svg class="subblock-icon" width="49" height="49">
+                     <path d="M44 21.9c0-1.7-1.2-3.4-2.7-4a6 6 0 0 1-3.2-2.6 6 6 0 0 1 .3-4.3c.7-1.4.3-3.4-.9-4.6a4.3 4.3 0 0 0-4.5-.8 6 6 0 0 1-4.3.3A6 6 0 0 1 26 2.7 4.3 4.3 0 0 0 22.1 0a4.3 4.3 0 0 0-3.8 2.6 6 6 0 0 1-2.8 3.2 6 6 0 0 1-4.2-.3 4.3 4.3 0 0 0-4.6.8A4.3 4.3 0 0 0 6 11a6 6 0 0 1 .3 4.3A6 6 0 0 1 3 18a4.3 4.3 0 0 0-2.6 3.9c0 1.6 1.1 3.3 2.6 3.8a6 6 0 0 1 3.2 2.8 6 6 0 0 1-.3 4.2c-.7 1.4-.3 3.4.8 4.6a4.3 4.3 0 0 0 4.6.8 6 6 0 0 1 4.2-.3 6 6 0 0 1 2.8 3.2 4.3 4.3 0 0 0 3.8 2.6c1.7 0 3.4-1.1 3.9-2.6a6 6 0 0 1 2.7-3.2 6 6 0 0 1 4.3.3c1.4.7 3.4.3 4.5-.8a4.3 4.3 0 0 0 1-4.6 6 6 0 0 1-.4-4.2 6 6 0 0 1 3.2-2.8A4.3 4.3 0 0 0 44 22zm-21.9 8a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/>
+                  </svg>
+                  <span class="subblock-2-title">Customization</span>
+                  <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
+               </div>
+               <div class="subblock-2">
+                  <svg class="subblock-icon" width="49" height="49">
+                     <path  d="M51.4 14.3L42 33.8a4.3 4.3 0 0 1-3.5 2.2H3c-1.4 0-2-1-1.4-2.2l9.5-19.5a4.3 4.3 0 0 1 3.5-2.2H50c1.4 0 2 1 1.4 2.2zM9 13.3L.7 30V8c0-1.4 1.1-2.5 2.5-2.5H14V4.1A3.7 3.7 0 0 1 17.7.3H24c2 0 3.7 1.7 3.7 3.8v1.4h10.8c1.3 0 2.4 1.1 2.4 2.5v1.6H14.7A6.8 6.8 0 0 0 9 13.2zm7.5-7.8h8.7V4.1c0-.7-.5-1.3-1.2-1.3h-6.3c-.3 0-.6.1-.9.4-.2.2-.3.5-.3.9v1.4z"/>
+                  </svg>
+                  <span class="subblock-2-title">Marketing</span>
+                  <p class="subblock-2-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, labore assumenda dolor asperiores id eum.</p>
+               </div>
+            </div>
+         </section>
+         <section class="block-3">
+            <div  class="block-3-wrap">
+               <h2 class="block-3-title">Waxom is Realization of your Ideas.</h2>
+               <p class="block-3-txt">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Clatitas etiam processus dynamicus, qui sequitur mutetionem cinsuetudium.</p>
+               <div class="block-3-img">
+                  <img class="left_img" src="img/browser-left.png" alt="Browser screen view"/>
+                  <img class="center_img"  src="img/browser-center.png" alt="Browser screen view"/>
+                  <img class="right_img"  src="img/browser-right.png" alt="Browser screen view"/>
+                  <div style="clear:both"></div>
+               </div>
+            </div>
+         </section>
+         <aside class="block-4">
+            <div class="block-4-wrap">
+               <div class="block-4-txt-wrap">
+                  <h2><span>Waxom</span> Multipurpose WordPress Theme</h2>
+                  <p>Don't Forget to Rate the Template. Thanks so much!</p>
+               </div>
+               <button class="main-button">Purchase Now</button>
+            </div>
+         </aside>
+         <section class="block-5">
+            <div class="block-5-wrap">
+               <h2>Our Latest Projects</h2>
+               <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt seaplius. Claritas est atiam processus dynamicus. sui sequitur mutationem consuetudium.</p>
+               <div class="block-5-btn-group">
+                  <button>All</button>
+                  <button>Web Design</button>
+                  <button>Mobile app</button>
+                  <button>Illustration</button>
+                  <button>Photography</button>                      
+               </div>
+               <div class="projects-block-wrap">
+                  <div class="project-item">
+                     <div class="project_image">
+                        <img src="/img/project1.png" alt="Project 1">
+                     </div>
+                     <!--
+                        <div class="hidden-icon"> 
+                        <svg width="36px" height="36px" class="svg-inline--fa fa-cog fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                             <path 
+                                   d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 
+                                   35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 
+                                   191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 
+                                   8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 
+                                   1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175
+                                   5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 
+                                   11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 
+                                   191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 
+                                   5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 
+                                   14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 
+                                   220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 
+                                   80-35.888 80-80z">
+                             </path>
+                           </svg>
+                            
+                           
+                        </div>
+                         
+                        -->
+                     <div class="project-name">
+                        <h3>Claritas Etiam Processus</h3>
+                        <p>Photography, Nature</p>
+                     </div>
+                  </div>
+                  <div class="project-item">
+                     <div class="project_image">
+                        <img src="/img/project2.png" alt="Project 2">
+                     </div>
+                     <div class="project-name">
+                        <h3>Quam Nutamus Farum</h3>
+                        <p>Graphic Design, Mock-Up</p>
+                     </div>
+                  </div>
+                  <div class="project-item">
+                     <div class="project_image">
+                        <img src="/img/project3.png" alt="Project 3">
+                     </div>
+                     <div class="project-name">
+                        <h3>Usus Legentis Videntur</h3>
+                        <p>Photography, Holiday</p>
+                     </div>
+                  </div>
+                  <div class="project-item">
+                     <div class="project_image">
+                        <img src="/img/project4.png" alt="Project 4">
+                     </div>
+                     <div class="project-name">
+                        <h3>Claritas Etiam Processus</h3>
+                        <p>Photography, Nature</p>
+                     </div>
+                  </div>
+                  <div class="project-item">
+                     <div class="project_image">
+                        <img src="/img/project5.png" alt="Project 5">
+                     </div>
+                     <div class="project-name">
+                        <h3>Quam Nutamus Farum</h3>
+                        <p>Graphic Design, Mock-Up</p>
+                     </div>
+                  </div>
+                  <div class="project-item">
+                     <div class="project_image">
+                        <img src="/img/project6.png" alt="Project 6">
+                     </div>
+                     <div class="project-name">
+                        <h3>Usus Legentis Videntur</h3>
+                        <p>Photography, Holiday</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
-      
    </body>
 </html>
