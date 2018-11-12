@@ -55,7 +55,7 @@ header.wrap > input {
  background:transparent;
 }
 
-#point1:checked ~ .slider {background-image: url(/img/main-photo.png); }
+#point1:checked ~ .slider {background-image: url(/img/header.jpg); }
 #point2:checked ~ .slider {background-image: url(/img/header_pic_2.jpg); }
 #point3:checked ~ .slider {background-image: url(/img/header_pic_3.jpg); }
 #point4:checked ~ .slider {background-image: url(/img/header_pic_4.jpg); }
@@ -96,6 +96,11 @@ header.wrap > input {
     justify-content: flex-end;
 }
 .main-nav{
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
     & a{
         font-size: 14px;
         font-family: @font-main;
@@ -106,6 +111,9 @@ header.wrap > input {
          color: @font-logo-color-hover;
                 }
         }
+    & li{
+        display: inline-block;
+    }
 }
 .icon-nav {
     margin-left: 23px;
@@ -119,7 +127,6 @@ header.wrap > input {
     }
 }          
     
-
 @media (max-width: 992px) {
     .all-nav {
 	flex-direction: column;

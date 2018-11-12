@@ -55,7 +55,7 @@ header.wrap > input {
   background: transparent;
 }
 #point1:checked ~ .slider {
-  background-image: url(/img/main-photo.png);
+  background-image: url(/img/header.jpg);
 }
 #point2:checked ~ .slider {
   background-image: url(/img/header_pic_2.jpg);
@@ -99,6 +99,11 @@ header.wrap > input {
   display: flex;
   justify-content: flex-end;
 }
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
 .main-nav a {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -107,6 +112,9 @@ header.wrap > input {
 }
 .main-nav a:hover {
   color: #c7b299;
+}
+.main-nav li {
+  display: inline-block;
 }
 .icon-nav {
   margin-left: 23px;
